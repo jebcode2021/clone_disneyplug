@@ -9,7 +9,15 @@
 
         &__branding {
             max-width: 320px;
-            margin: 0 auto;
+            margin: 0 auto 38px;
+        }
+
+        .title--small {
+            margin-bottom: 64px;
+        }
+
+        p {
+            margin-bottom: 20px;
         }
     }
 }
