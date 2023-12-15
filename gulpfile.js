@@ -14,12 +14,8 @@ function img() {
         .pipe(gulp.dest('./dist/img'));
 }
 
-function index() {
-    return gulp.src('./index.html')
-        .pipe(gulp.dest('./dist'));
-}
 
-exports.default = gulp.parallel(styles, img, index);
+exports.default = gulp.parallel(styles, img);
 exports.img = img;
 
 exports.watch = function () {
