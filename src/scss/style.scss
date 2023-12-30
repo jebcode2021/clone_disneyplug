@@ -6,6 +6,7 @@
 @use 'faq';
 @use 'footer';
 @use 'header';
+@use 'loader';
 
 @font-face {
     font-family: Avenir;
@@ -30,6 +31,17 @@
 body {
     background-color: variaveis.$corFundoPreto;
 }
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
 
 @mixin title($fontSize: 40px) {
     @include text($fontSize);
